@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* body {
+    font-family: Arial, Helvetica, sans-serif;
+  } */
+  
+  body {
+    background-color: 	#fff2e6;
+    font-family: 'Playfair Display', serif;
+    margin: 0px;
+    letter-spacing: 1px;
+
+    animation-name: animacaonatal;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacaonatal {
+    0%   {background-color:#fff2e6;}
+    17%  {background-color:#ffcc99;}
+    34%  {background-color:#ffa64d;}
+    51%  {background-color:#ff8000;}
+    68%  {background-color:#ffa64d;}
+    85%  {background-color:#ffcc99;}
+    100% {background-color:#fff2e6;}
+}
+
+/* Style the header */
+.header {
+    padding: 100px;
+    text-align: center;
+    font-size: 35px;
+    color: floralwhite;
+    position: relative;
+    background-image: linear-gradient(#ff9d2f, #ff6126);
+    border-bottom-left-radius: 300% 100%;
+    border-bottom-right-radius: 200% 100%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    color: floralwhite;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.container{
+    padding: 30px;
+}
+
+.centralizado{
+    text-align: center;
+}
+
+img{
+    width: 50%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    /* width: 40%; */
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+
+
+
+
+.footer{
+    background-image: linear-gradient(#ff9d2f, #ff6126);
+    /* display: flex; */
+    padding: 50px;
+    color: floralwhite;
+    /* justify-content: space-around; */
+    align-content: center;
+    text-align: center;
+
+}
+
+
+#redesSociais {
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.socialLinks {
+    margin: 25px;
+}
+
+#email {
+    letter-spacing: 1px;
+    justify-content: center;
+
+    /* justify-content: space-around; */
+    /* background-color: yellow; */
+}
+
+input {
+    padding: 15px;
+    margin: 5px;
+    width: 50%;
+    border-radius: 5px;
+}
+button {
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.26);
+    color: floralwhite;
+
+    /* font-size: 12px; */
+    /* font-weight: bold; */
+    letter-spacing: 2px;
+    border: rgba(0, 0, 0, 0.363) 1px solid;
+}
+
+/* Responsividade do Site */
+
+/* Container for flexboxes */
+.row {
+    display: -webkit-flex;
+    display: flex;
+}
+  
+/* Create three equal columns that sits next to each other */
+.column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+}
+  
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+  
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .row {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
